@@ -256,7 +256,7 @@ header .app img{
 }
 
 .game__slider img{
-    height: 100px;
+    height: 150px;
     width: 100%;
 }
 
@@ -289,19 +289,198 @@ header .app img{
 }
 
 .game__slider .swiper-button-prev::after, .game__slider .swiper-button-next::after{
-    content: ''; /* Скрыть встроенный текст (обычно стрелку) */
+    content: ''; 
   background-size: cover;
-  width: 30px; /* Задайте ширину изображения */
-  height: 30px; /* Задайте высоту изображения */
+  width: 30px; 
+  height: 30px; 
   display: inline-block;
 }
 
 .game__slider .swiper-button-prev::after{
-  background-image: url('../img/prev-arrow.png'); /* Путь к вашему изображению */
+  background-image: url('../img/prev-arrow.png'); 
 }
 
 .game__slider .swiper-button-next::after{
-    background-image: url('../img/next-arrow.png'); /* Путь к вашему изображению */
+    background-image: url('../img/next-arrow.png');
 }
 
+.demo_wrapper {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: none
+}
 
+.demo_wrapper button{
+    transform: skew(340deg);
+    border: 1px solid rgb(203, 150, 64);
+    margin-left: 10px;
+    background: linear-gradient(rgb(0, 0, 0) 0%, rgb(47, 50, 54) 100%);
+    box-shadow: rgba(0, 0, 0, 0.25) 3px 5px 4px;
+    transition: color 0.1s linear 0s;
+    width: fit-content;
+    color: var(--white);
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.demo_wrapper._active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top_games{
+    width: 100%;
+    background: rgb(200, 216, 232);
+    box-shadow: rgba(197, 197, 197, 0.25) 0px 10px 12px inset;
+}
+
+.top_games .container{
+     padding: 5px 0 8px 0;
+}
+
+.top_games .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.games_left {
+    width: 85%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: row;
+    padding-right: 10px;
+    gap: 20px;
+}
+
+.games_title{
+    width: 350px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    height: 56px;
+    background: var(--black);
+    transform: skew(-340deg);
+    border-radius: 10px;
+}
+
+.games_title::before{
+    content: "";
+    width: 24px;
+    height: 56px;
+    background: var(--black);
+    transform: skew(340deg);
+}
+
+.games_title p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 20px;
+    transform: skew(340deg);
+}
+
+.game_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    background: var(--black);
+    transform: skew(-340deg);
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer
+}
+
+.game_item .game_wrapper{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 50px;
+    transform: skew(340deg);
+}
+
+.game_wrapper img {
+    width: 30px;
+}
+
+.game_wrapper p {
+    font-size: 13px;
+    color: var(--white);
+    margin: 0px;
+    padding-left: 5px;
+}
+
+.games_right{
+    width: 26%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background: linear-gradient(rgb(72, 72, 72) 0%, rgb(7, 7, 7) 100%);
+    position: relative;
+    margin-left: 20px;
+}
+
+.games_right::after{
+    content: "";
+    width: 30px;
+    height: 100%;
+    background: linear-gradient(rgb(72, 72, 72) 0%, rgb(7, 7, 7) 100%);
+    position: absolute;
+    top: 0px;
+    left: -19px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    transform: skew(-340deg);
+}
+
+.games_right-wrapper{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    height: 57px;
+    background-size: cover;
+}
+
+.games_right .wrapper{
+    width: auto;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+
+.games_right .wrapper img{
+    width: 27px;
+    border-radius: 20px;
+    cursor: pointer
+}
+
+.games_right .divider{
+    width: 1px;
+    height: 57px;
+    background-color: var(--white);
+}
+
+.games_right p {
+    font-size: 11px;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+}
