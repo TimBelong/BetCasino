@@ -47,3 +47,15 @@ gameListItems.forEach(item =>{
         this.querySelector('.demo_wrapper').classList.remove('_active');
     });
 });
+
+let promotionOpen = document.querySelector('.promotions_btn'),
+    promoitionClose = document.querySelector('.close_btn'),
+    promotions = document.querySelector('.promotions');
+
+promotionOpen.addEventListener('click', () =>{
+    promotions.classList.add('_active');
+});
+
+promoitionClose.addEventListener('click', () => {
+    promotions.classList.remove('_active');
+});
