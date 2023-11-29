@@ -1,4 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55?styles=30125,16016,16008,16022,15981,15985,16012,15994,30128,15999,30123,30130,30135,15997');
+
 * {
     margin: 0;
     padding: 0;
@@ -22,12 +23,12 @@
     --iteration-count: infinite;
 }
 
-body{
+body {
     overflow-x: hidden;
     margin: 0;
 }
 
-header{
+header {
     width: 100%;
     height: 70px;
     background-color: var(--black);
@@ -37,18 +38,18 @@ header{
     z-index: 100;
 }
 
-header .wrapper{
+header .wrapper {
     display: flex;
     justify-content: space-between;
     height: 100%;
 }
 
-.header_logo img{
+.header_logo img {
     width: 150px;
     margin-left: 20px;
 }
 
-.menu_section{
+.menu_section {
     display: flex;
     align-items: center;
     gap: 40px;
@@ -57,7 +58,7 @@ header .wrapper{
 nav ul {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 nav ul li {
@@ -70,27 +71,26 @@ nav ul li {
     white-space: nowrap;
 }
 
-nav ul li a{
-    width: 135px;
+nav ul li a {
     text-align: center;
     display: block;
     text-decoration: none;
-    padding: 10px 4px;
+    padding: 10px 15px;
     font-size: 14px;
     transform: skew(-339deg);
     color: rgb(36, 36, 36);
     text-transform: uppercase;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: #6967E2;
 }
 
-.header_links{
+.header_links {
     display: flex;
 }
 
-.header_btn{
+.header_btn {
     display: flex;
     align-items: center;
 }
@@ -99,11 +99,11 @@ nav ul li a:hover{
     margin-right: 10px;
 }
 
-.whatsapp_wrapper img{
+.whatsapp_wrapper img {
     width: 210px;
 }
 
-.header_btn .btn a{
+.header_btn .btn a {
     width: 80px;
     text-align: center;
     display: block;
@@ -119,7 +119,7 @@ nav ul li a:hover{
     font-family: 100;
 }
 
-.header_btn .main_btn{
+.header_btn .main_btn {
     transform: skew(340deg);
     margin-left: 10px;
     background: var(--main_btn);
@@ -127,7 +127,7 @@ nav ul li a:hover{
 }
 
 
-.header_btn .sub_btn{
+.header_btn .sub_btn {
     transform: skew(340deg);
     margin-left: 10px;
     margin-right: 10px;
@@ -148,7 +148,7 @@ header .app {
     padding-right: 10px;
 }
 
-header .app::before{
+header .app::before {
     content: "";
     width: 27px;
     height: 100%;
@@ -160,7 +160,7 @@ header .app::before{
     border-left: 1px solid var(--white);
 }
 
-header .app img{
+header .app img {
     width: 83px;
     z-index: 2;
 }
@@ -205,12 +205,13 @@ header .app img{
     from {
         transform: translateX(100%);
     }
+
     to {
         transform: translateX(-100%);
     }
 }
 
-.main__slider{
+.main__slider {
     margin-top: 100px;
     box-sizing: border-box;
     width: 100%;
@@ -218,7 +219,7 @@ header .app img{
     position: relative;
 }
 
-.main__slider img{
+.main__slider img {
     height: 100%;
     width: 100%;
 }
@@ -229,7 +230,7 @@ header .app img{
     position: absolute !important;
     bottom: 0% !important;
     height: 40px !important;
-    display: flex ;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -239,9 +240,9 @@ header .app img{
     height: 12px !important;
     width: 12px !important;
 
-  }
+}
 
-.banner_img video{
+.banner_img video {
     width: 30%;
     position: absolute;
     top: 20%;
@@ -250,7 +251,7 @@ header .app img{
     border-radius: 55px 0 55px 0;
 }
 
-.game__slider{
+.game__slider {
     height: 100px;
     position: relative;
     box-sizing: border-box;
@@ -259,7 +260,7 @@ header .app img{
     position: relative;
 }
 
-.game__slider img{
+.game__slider img {
     height: 150px;
     width: 100%;
 }
@@ -278,7 +279,7 @@ header .app img{
     clip-path: polygon(0px 0px, 70% 0%, 100% 100%, 0% 100%);
 }
 
-.swiper-button-next{
+.swiper-button-next {
     z-index: 100;
     right: -29px !important;
     top: 21% !important;
@@ -292,19 +293,20 @@ header .app img{
     clip-path: polygon(30% 0px, 0% 100%, 100% 100%, 100% 0%);
 }
 
-.game__slider .swiper-button-prev::after, .game__slider .swiper-button-next::after{
-    content: ''; 
-  background-size: cover;
-  width: 30px; 
-  height: 30px; 
-  display: inline-block;
+.game__slider .swiper-button-prev::after,
+.game__slider .swiper-button-next::after {
+    content: '';
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
 }
 
-.game__slider .swiper-button-prev::after{
-  background-image: url('../img/prev-arrow.png'); 
+.game__slider .swiper-button-prev::after {
+    background-image: url('../img/prev-arrow.png');
 }
 
-.game__slider .swiper-button-next::after{
+.game__slider .swiper-button-next::after {
     background-image: url('../img/next-arrow.png');
 }
 
@@ -316,7 +318,7 @@ header .app img{
     display: none
 }
 
-.demo_wrapper button{
+.demo_wrapper button {
     transform: skew(340deg);
     border: 1px solid rgb(203, 150, 64);
     margin-left: 10px;
@@ -329,24 +331,24 @@ header .app img{
     cursor: pointer;
 }
 
-.demo_wrapper button:hover{
+.demo_wrapper button:hover {
     background: #6967E2;
 }
 
-.demo_wrapper._active{
+.demo_wrapper._active {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.top_games{
+.top_games {
     width: 100%;
     background: rgb(200, 216, 232);
     box-shadow: rgba(197, 197, 197, 0.25) 0px 10px 12px inset;
 }
 
-.top_games .container{
-     padding: 5px 0 8px 0;
+.top_games .container {
+    padding: 5px 0 8px 0;
 }
 
 .top_games .wrapper {
@@ -365,7 +367,7 @@ header .app img{
     gap: 20px;
 }
 
-.games_title{
+.games_title {
     width: 350px;
     display: flex;
     -webkit-box-align: center;
@@ -378,7 +380,7 @@ header .app img{
     border-radius: 10px;
 }
 
-.games_title::before{
+.games_title::before {
     content: "";
     width: 24px;
     height: 56px;
@@ -386,7 +388,7 @@ header .app img{
     transform: skew(340deg);
 }
 
-.games_title p{
+.games_title p {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -397,7 +399,7 @@ header .app img{
     transform: skew(340deg);
 }
 
-.game_item{
+.game_item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -409,11 +411,11 @@ header .app img{
     cursor: pointer
 }
 
-.game_item:hover{
+.game_item:hover {
     background: linear-gradient(92.92deg, rgb(111, 109, 230) 0%, rgb(84, 81, 212) 45.8%, rgb(49, 45, 185) 93.54%);
 }
 
-.game_item .game_wrapper{
+.game_item .game_wrapper {
     display: flex;
     -webkit-box-pack: center;
     justify-content: center;
@@ -434,7 +436,7 @@ header .app img{
     padding-left: 5px;
 }
 
-.games_right{
+.games_right {
     width: 26%;
     display: flex;
     -webkit-box-align: center;
@@ -446,7 +448,7 @@ header .app img{
     margin-left: 20px;
 }
 
-.games_right::after{
+.games_right::after {
     content: "";
     width: 30px;
     height: 100%;
@@ -459,7 +461,7 @@ header .app img{
     transform: skew(-340deg);
 }
 
-.games_right-wrapper{
+.games_right-wrapper {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
@@ -468,7 +470,7 @@ header .app img{
     background-size: cover;
 }
 
-.games_right .wrapper{
+.games_right .wrapper {
     width: auto;
     display: flex;
     -webkit-box-align: center;
@@ -479,13 +481,13 @@ header .app img{
     position: relative;
 }
 
-.games_right .wrapper img{
+.games_right .wrapper img {
     width: 27px;
     border-radius: 20px;
     cursor: pointer
 }
 
-.games_right .divider{
+.games_right .divider {
     width: 1px;
     height: 57px;
     background-color: var(--white);
@@ -497,7 +499,7 @@ header .app img{
     margin: 0px;
 }
 
-.promotions{
+.promotions {
     width: 90%;
     background: rgba(11, 9, 52, 0.95);
     box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 40px;
@@ -514,18 +516,18 @@ header .app img{
     right: -90% !important;
 }
 
-.promotions._active{
+.promotions._active {
     right: 5% !important
 }
 
-.close_btn{
+.close_btn {
     position: absolute;
     right: 0px;
     top: 0px;
     cursor: pointer;
 }
 
-.promotion_header{
+.promotion_header {
     display: flex;
     -webkit-box-pack: justify;
     justify-content: space-between;
@@ -535,7 +537,7 @@ header .app img{
     margin: 20px auto;
 }
 
-.promotion_header h4{
+.promotion_header h4 {
     font-weight: 500;
     font-size: 34px;
     line-height: 46px;
@@ -545,7 +547,7 @@ header .app img{
     color: rgb(255, 221, 166);
 }
 
-.promotion_header button{
+.promotion_header button {
     background: linear-gradient(rgb(103, 49, 227) 0%, rgb(103, 120, 227) 100%);
     border-radius: 5px;
     padding: 10px 15px;
@@ -560,13 +562,13 @@ header .app img{
     border: none;
 }
 
-.promotions .bonuses{
+.promotions .bonuses {
     width: 85%;
     height: auto;
     margin: 0 auto;
 }
 
-.promotions .bonuses .wrapper{
+.promotions .bonuses .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -581,7 +583,7 @@ header .app img{
     cursor: pointer;
 }
 
-.promotion_name{
+.promotion_name {
     font-style: normal;
     font-weight: 500;
     font-size: 23px;
@@ -591,7 +593,7 @@ header .app img{
     margin: 0px 0px 10px;
 }
 
-.promotions_btn{
+.promotions_btn {
     background: linear-gradient(79.19deg, rgb(115, 113, 232) 0%, rgb(45, 42, 187) 100%);
     padding: 5px 10px;
     font-style: normal;
@@ -609,12 +611,12 @@ header .app img{
     left: -72px;
 }
 
-footer{
+footer {
     width: 100%;
     background-color: var(--black);
 }
 
-footer .wrapper{
+footer .wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -625,14 +627,14 @@ footer .wrapper{
     box-sizing: border-box;
 }
 
-.sponsors{
+.sponsors {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 180px;
 }
 
-.sponsors_item{
+.sponsors_item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -640,7 +642,7 @@ footer .wrapper{
     gap: 30px;
 }
 
-.sponsor_name{
+.sponsor_name {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -650,42 +652,142 @@ footer .wrapper{
     text-align: center;
 }
 
-.sponsors_item img{
+.sponsors_item img {
     width: 80px;
 }
 
 
-.sponsors_item:last-child img{
+.sponsors_item:last-child img {
     width: 160px;
 }
 
-.sponsors .divider{
+.sponsors .divider {
     width: 2px;
     height: 126px;
     background: linear-gradient(rgb(230, 162, 56) 0%, rgb(253, 239, 156) 47.92%, rgb(219, 146, 26) 100%);
 }
 
-.partners{
+.partners {
     display: flex;
-    align-items:center;
-    justify-content:space-between;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
 }
 
-.partner_item{
+.partner_item {
     width: 8%;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     cursor: pointer;
     padding: 10px 0;
     border-radius: 10px
 }
 
-.partner_item:hover{
+.partner_item:hover {
     background-color: #222222;
 }
 
-.partner_item img{
+.partner_item img {
     max-width: 100px;
+}
+
+.payment_methods {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+footer .title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.content_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.content_wrapper img {
+    width: 100px;
+}
+
+.social_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.social_links .content_wrapper img {
+    width: 45px;
+    cursor: pointer;
+}
+
+.social_links .content_wrapper img:hover {
+    border-radius: 60%;
+    border: 2px solid var(--white);
+}
+
+.articles {
+    margin-bottom: 40px;
+}
+
+.articles ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.articles ul li {
+    list-style-type: none;
+    color: #666666;
+    font-size: 14px;
+    border-right: 1px solid #666666;
+    padding-right: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.articles ul li:last-child {
+    border: none;
+    padding-right: 0px;
+}
+
+.articles ul li::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0%;
+    background-color: #666666;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.articles ul li:hover::after {
+    width: 95%;
+}
+
+@media(max-width: 1600px) {
+    .games_title {
+        width: 220px;
+    }
+
+    .games_left {
+        gap: 10px;
+    }
+
+    .promotions .bonuses img{
+        width: 320px;
+    }
 }
