@@ -34,7 +34,19 @@ let gameSlider = new Swiper('.game__slider', {
   autoplay: {
       delay: 5000,
   },
+  breakpoints: {
+      // При ширине экрана до 1400 пикселей
+      1400: {
+          slidesPerView: 3, // Измените количество отображаемых слайдов по вашему выбору
+      },
+      // Добавьте другие точки останова при необходимости
+      // Например, для ширин меньше 768 пикселей:
+      1000: {
+          slidesPerView: 2,
+      },
+  },
 });
+
 
 let gameListItems = document.querySelectorAll('.swiper-slide');
 
