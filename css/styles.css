@@ -370,7 +370,7 @@ header .app img {
 }
 
 .games_title {
-    width: 350px;
+    width: 450px;
     display: flex;
     -webkit-box-align: center;
     align-items: center;
@@ -1191,8 +1191,12 @@ footer .title {
         display: none;
     }
 
+    .games_title {
+        padding-right: 70px;
+    }
+
     .games_left {
-        gap: 20px;
+        gap: 10px;
     }
 
     .games_right{
