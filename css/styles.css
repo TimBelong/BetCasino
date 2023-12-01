@@ -251,6 +251,18 @@ header .app img {
     z-index: 10;
     border-radius: 55px 0 55px 0;
 }
+.mobile_game-slider{
+    height: 100px;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.mobile_game-slider img{
+    width: 100%;
+}
 
 .game__slider {
     height: 100px;
@@ -1300,7 +1312,7 @@ footer .title {
         z-index: 1;
         width: 100%;
         margin: 0 auto;
-        margin-top: -20px;
+        margin-top: -8px;
         background-position: -50%;
         padding: 20px 0 10px 0;
     }
@@ -1322,7 +1334,7 @@ footer .title {
         background: var(--black);
         border-top-right-radius: 30px;
         border-bottom-right-radius: 30px;
-    
+
     }
 
     .mobile_section-menu button:first-child {
@@ -1369,16 +1381,16 @@ footer .title {
         border-bottom-right-radius: 30px;
     }
 
-    .btn_img{
+    .btn_img {
         width: 1.25em;
         height: 1.25em;
     }
 
-    .btn_img img{
+    .btn_img img {
         width: 100%;
     }
-    
-    .mobile_section-banner{
+
+    .mobile_section-banner {
         width: calc(75% - 5px);
         height: 100%;
         right: 1px;
@@ -1414,7 +1426,7 @@ footer .title {
         height: 100%;
     }
 
-    .mobile_section-links{
+    .mobile_section-links {
         position: relative;
         display: flex;
         align-items: flex-end;
@@ -1422,7 +1434,7 @@ footer .title {
         gap: 10px;
     }
 
-    .links_wrapper{
+    .links_wrapper {
         display: flex;
         flex-direction: column;
         -webkit-box-align: center;
@@ -1437,7 +1449,7 @@ footer .title {
         z-index: 9;
     }
 
-    .links_wrappper a{
+    .links_wrappper a {
         padding: 6px 0px;
         margin: 0px;
         display: flex;
@@ -1447,11 +1459,11 @@ footer .title {
         justify-content: center;
     }
 
-    .mobile_section-img{
+    .mobile_section-img {
         width: 20px;
     }
 
-    .appIcon{
+    .appIcon {
         position: relative;
         padding: 6px 0px;
         margin: 0px;
@@ -1462,7 +1474,7 @@ footer .title {
         justify-content: center;
     }
 
-    .appIcon::before{
+    .appIcon::before {
         content: "";
         width: 100%;
         height: 1px;
@@ -1470,6 +1482,68 @@ footer .title {
         position: absolute;
         left: 0px;
         top: 0px;
+    }
+
+    .mobile_menu {
+        height: 48px;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-shrink: 0;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .menu_item {
+        display: flex;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        width: 20%;
+        height: 48px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+
+    .menu_item.active{
+        background: linear-gradient(92.92deg, rgb(111, 109, 230) 0%, rgb(49, 45, 185) 93.54%) 0% 0% / cover;
+    }
+
+    .menu_item .item_img {
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        width: 1.25em;
+        height: 1.25em;
+        flex-shrink: 0;
+    }
+
+    .menu_item .item_img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .menu_item .item_name {
+        font-size: 12px;
+        color: rgb(255, 255, 255);
+        white-space: nowrap;
+    }
+
+    .text_img{
+        width: 80%;
+        margin: 20px auto;
     }
 }
 
@@ -1485,36 +1559,152 @@ footer .title {
     .sponsors_item img {
         width: 60px;
     }
-    
+
     .sponsors_item:last-child img {
         width: 100px;
     }
 
     .partners {
-        gap: 20px;
+        gap: 30px;
     }
-    
+
     .partner_item {
         width: 25%;
     }
 
-    .payment_methods .content_wrapper{
+    .payment_methods .content_wrapper {
         flex-wrap: wrap;
     }
 
-    .articles{
+    .articles {
         display: none;
     }
 
-    .social_links{
+    .social_links {
         margin-bottom: 80px;
+    }
+
+    .content_wrapper {
+        gap: 20px;
     }
 
     .social_links .content_wrapper img {
         width: 25px;
     }
 
-    .marquee, .gNwUAT{
+    .marquee,
+    .gNwUAT {
         font-size: 12px;
+    }
+
+    .textSection .content_section table p {
+        font-size: 12px !important;
+        line-height: 15px !important;
+    }
+}
+
+@media(max-width: 374px){
+    .header_logo img {
+        width: 100px;
+    }
+
+    .social_links .content_wrapper img {
+        width: 20px;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+
+.txt_btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.cta {
+    display: flex;
+    padding: 10px 45px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: white;
+    background: var(--main_btn);
+    transition: 1s;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+    align-items: center;
+}
+
+.cta:focus {
+   outline: none; 
+}
+
+.cta:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 var(--sub_btn);
+}
+
+.cta span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 0px;
+}
+
+.cta:hover  span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 45px;
+}
+
+.cta span {
+    transform: skewX(15deg);
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 900;
+  }
+
+.cta  span:nth-child(2) {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+  }
+  
+/**************SVG****************/
+
+path.one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+path.two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.cta:hover path.three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover path.one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover path.two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+
+@keyframes color_anim {
+    0% {
+        fill: white;
+    }
+    50% {
+        fill: var(--sub_btn);
+    }
+    100% {
+        fill: white;
     }
 }

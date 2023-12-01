@@ -47,16 +47,40 @@ let gameSlider = new Swiper('.game__slider', {
   },
 });
 
+let mobGameSlider = new Swiper('.mobile_game-slider', {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    slidesPerGroup: 1,
+    centerSlidesBounds: true,
+    centerInsufficientSlides: true,
+    centerSlides: true,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+        delay: 3000,
+    },
+  });
+
 
 let gameListItems = document.querySelectorAll('.swiper-slide');
 
-gameListItems.forEach(item =>{
+gameListItems.forEach(item => {
     item.addEventListener('mouseenter', function () {
-        this.querySelector('.demo_wrapper').classList.add('_active');
+        let demoWrapper = this.querySelector('.demo_wrapper');
+        if (demoWrapper) {
+            demoWrapper.classList.add('_active');
+        }
     });
 
     item.addEventListener('mouseleave', function () {
-        this.querySelector('.demo_wrapper').classList.remove('_active');
+        let demoWrapper = this.querySelector('.demo_wrapper');
+        if (demoWrapper) {
+            demoWrapper.classList.remove('_active');
+        }
     });
 });
 
@@ -70,4 +94,13 @@ promotionOpen.addEventListener('click', () =>{
 
 promoitionClose.addEventListener('click', () => {
     promotions.classList.remove('_active');
+});
+
+let externalLinks = document.querySelectorAll('.link');
+
+
+externalLinks.forEach(link => {
+	link.addEventListener('click', ()=>{
+		document.location.href = 'https://cutt.ly/SwOL7l7Z';
+	});
 });
